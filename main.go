@@ -11,6 +11,7 @@ import (
 var app = cli.NewApp()
 
 func init() {
+	app.Usage = "Base Command Line."
 	c := []cli.Command{}
 	c = cmd.SetupBase(c)
 	app.Commands = c
